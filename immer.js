@@ -30,9 +30,9 @@ const reducer=(state=initialState,action)=>{
             //         city: action.payload
             //     }
             // }
-            // return produce(state,(draft)=>{
-            //     draft.address.city=action.payload
-            // })
+            return produce(state,(draft)=>{
+                draft.address.city=action.payload
+            })
         default:
             return state;
     }
